@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+    @import './root.css';
+    @import './reboot.css';
+    @import './pages/home.css';
+    @import './pages/login.css';
+    @import './pages/register.css';
+    @import './pages/register/verify.css';
+    @import './pages/register/email.css';
+    @import './pages/dashboard.css';
+    @import './components/buttons.css';
+    @import './components/form.css';
+}

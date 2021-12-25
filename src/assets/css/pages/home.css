@@ -1,0 +1,29 @@
+.home_page {
+    @apply h-screen w-screen;
+    background-image: url('../../img/image_1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home_img_filter {
+    @apply h-full w-full px-12 grid grid-cols-1 text-white;
+    background-color: rgba(0, 0, 0, .4);
+    grid-template-rows: 80% 20%;
+}
+
+.home_title {
+    @apply flex justify-center items-center;
+}
+
+.home_title > h1 {
+    @apply text-6xl font-light uppercase;
+}
+
+.home_buttons {
+    @apply grid grid-rows-1 grid-cols-2 gap-5;
+}
+
+.home_buttons > a {
+    @apply flex justify-center items-center font-bold;
+    height: fit-content;
+}

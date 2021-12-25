@@ -1,0 +1,18 @@
+.button {
+    @apply p-3 rounded-xl shadow-lg;
+}
+
+.button_primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.button_white {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.button_black {
+    background-color: black;
+    color: white;
+}

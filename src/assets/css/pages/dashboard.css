@@ -1,0 +1,154 @@
+.dashboard {
+    @apply h-screen grid grid-cols-1;
+    grid-template-rows: 90% 10%;
+}
+
+.dashboard_wrapper {
+    @apply overflow-y-scroll;
+}
+
+/* Dashboard Header */
+
+.dashboard_header {
+    @apply p-6 bg-green-400 text-white;
+}
+
+.dashboard_header > .header_top {
+    @apply mb-5 grid grid-rows-1;
+    grid-template-columns: 80% 10% 10%;
+}
+
+.dashboard_header > .header_top > .profile_name > h1:first-child {
+    @apply text-lg;
+}
+
+.dashboard_header > .header_top > .profile_name > h1:last-child {
+    @apply text-2xl;
+}
+
+.dashboard_header > .header_bottom {
+    @apply flex justify-between items-center;
+}
+
+.dashboard_header > .header_bottom > .header_button {
+    @apply flex flex-col items-center;
+}
+
+.dashboard_header > .header_bottom > .header_button > a {
+    @apply h-16 w-16 mb-3 flex justify-center items-center bg-white bg-opacity-50;
+}
+
+/* Dashboard Content - Point Statistic */
+
+.dashboard_content > .point_statistic {
+    @apply m-5 p-5 grid grid-rows-2 grid-cols-3 gap-5 bg-gray-300 rounded-lg shadow-xl;
+    grid-template-areas: 
+    "text text graphic"
+    "desc desc desc";
+}
+
+.dashboard_content > .point_statistic > .statistic_text {
+    @apply flex flex-col justify-between;
+    grid-area: text;
+}
+
+.dashboard_content > .point_statistic > .statistic_text > div > h1 {
+    @apply text-white font-bold;
+}
+
+.dashboard_content > .point_statistic > .statistic_text > h1 {
+    @apply text-2xl text-green-500 font-bold;
+}
+
+.dashboard_content > .point_statistic > .statistic_graphic {
+    grid-area: graphic;
+}
+
+.dashboard_content > .point_statistic > .statistic_description {
+    @apply flex justify-between items-center border-t-4;
+    grid-area: desc;
+}
+
+.dashboard_content > .point_statistic > .statistic_description > div {
+    @apply p-3 rounded-2xl text-white;
+}
+
+/* Dashboard Content - Point Exchange */
+
+.dashboard_content > .point_exchange {
+    @apply m-5 flex flex-col items-center;
+}
+
+.dashboard_content > .point_exchange > h1 {
+    @apply mb-3 p-3 bg-green-300 text-white font-bold rounded-xl;
+}
+
+.dashboard_content > .point_exchange > .rewards_list {
+    @apply w-full;
+}
+
+.dashboard_content > .point_exchange > .rewards_list > .reward {
+    @apply w-full my-3 p-3 flex flex-col items-center bg-gray-300 rounded-xl;
+}
+
+.dashboard_content > .point_exchange > .rewards_list > .reward > * {
+    @apply my-2;
+}
+
+.dashboard_content > .point_exchange > .rewards_list > .reward > h1 {
+    @apply text-xl;
+}
+
+.dashboard_content > .point_exchange > .rewards_list > .reward > a {
+    @apply p-3 bg-green-300 text-white rounded-xl;
+}
+
+.dashboard_content > .point_exchange > a {
+    @apply p-3 bg-green-300 text-white rounded-xl;
+}
+
+/* Dashboard Content - Headline News */
+
+.dashboard_content > .headline_news {
+    @apply p-6 flex flex-col items-center bg-green-500 text-white;
+}
+
+.dashboard_content > .headline_news > h1 {
+    @apply my-3 text-xl font-bold uppercase;
+}
+
+.dashboard_content > .headline_news > .news_list {
+    @apply w-full flex flex-col items-center;    
+}
+
+.dashboard_content > .headline_news > .news_list > .news {
+    @apply my-3;
+}
+
+.dashboard_content > .headline_news > .news_list > .news > * {
+    @apply my-2;
+}
+
+.dashboard_content > .headline_news > .news_list > .news > a {
+    @apply underline;
+}
+
+.dashboard_content > .headline_news > a {
+    @apply my-3 underline;
+}
+
+/* Dashboard Menu */
+
+.dashboard_menu {
+    @apply p-5 flex justify-between items-center bg-gray-100 shadow-inner;
+}
+
+.dashboard_menu > a {
+    @apply p-3 flex justify-center items-center rounded-xl text-xl;
+    height: fit-content;
+    width: fit-content;
+}
+
+.dashboard_menu > a.selected {
+    @apply bg-gray-300;
+}

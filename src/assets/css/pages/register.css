@@ -1,0 +1,47 @@
+.register_page {
+    @apply h-screen w-screen p-5 grid grid-cols-1;
+    grid-template-rows: 10% 90%;
+}
+
+.register_page_buttons {
+    @apply w-full flex justify-between items-center;
+}
+
+.register_headline {
+    @apply px-14 flex flex-col justify-center items-center text-center;
+}
+
+.register_headline > h1 {
+    @apply mb-3 text-2xl;
+}
+
+.register_headline > p {
+    @apply text-gray-500;
+}
+
+.register_content {
+    @apply grid grid-cols-1;
+    grid-template-rows: 20% 80%;
+}
+
+.register_form {
+    @apply flex flex-col;
+}
+
+.register_form > div {
+    @apply mb-3 flex flex-col;
+}
+
+.register_form > div > label {
+    @apply absolute transform -translate-y-3;
+}
+
+.register_form > button {
+    @apply mt-auto;
+}
+
+/* For Development */
+
+.register_form > a {
+    @apply mt-auto flex justify-center items-center;
+}

@@ -1,0 +1,45 @@
+.register_email_page {
+    @apply h-screen w-screen p-5 grid grid-cols-1;
+    grid-template-rows: 10% 90%;
+}
+
+.email_content {
+    @apply grid grid-cols-1;
+    grid-template-rows: 20% 80%;
+}
+
+.email_content > form {
+    @apply flex flex-col items-center;
+}
+
+.email_content > form > * {
+    @apply mb-3;
+}
+
+.email_content > form > div {
+    @apply w-full flex flex-col;
+}
+
+.email_content > form > div > .input_num {
+    @apply grid grid-rows-1 gap-5 border-b-2 border-gray-400;
+    grid-template-columns: 15% calc(85% - 1.25rem);
+}
+
+.email_content > form > div > p > a {
+    @apply font-bold;
+    color: var(--primary-color);
+}
+
+.email_content > form > div:last-child {
+    @apply mt-auto;
+}
+
+.email_content > form > div:last-child > p {
+    @apply mb-5 text-center;
+}
+
+/* For development */
+
+.email_content > form > div:last-child > a {
+    @apply text-center;
+}

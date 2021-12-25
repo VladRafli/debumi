@@ -1,0 +1,6 @@
+{
+  "appId": "com.debumi.debumiapp",
+  "appName": "debumi",
+  "webDir": "build",
+  "bundledWebRuntime": false
+}

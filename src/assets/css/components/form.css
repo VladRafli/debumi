@@ -1,0 +1,11 @@
+.form {
+    @apply my-3;
+}
+
+.form_full {
+    @apply p-3 border-2 border-gray-400;
+}
+
+.form_underline {
+    @apply py-3 border-b-2 border-gray-400;
+}

@@ -1,0 +1,41 @@
+.verify_user_page {
+    @apply h-screen w-screen p-5 grid grid-cols-1;
+    grid-template-rows: 10% 90%;
+}
+
+.verify_content {
+    @apply grid grid-cols-1;
+    grid-template-rows: 20% 80%;
+}
+
+.verify_content > form {
+    @apply flex flex-col items-center;
+}
+
+.verify_content > form > * {
+    @apply mb-3;
+}
+
+.verify_content > form > p {
+    @apply text-gray-400;
+}
+
+.verify_content > form > a {
+    @apply font-bold;
+    color: var(--primary-color);
+}
+
+.verify_content > form > div {
+    @apply flex mx-auto;
+    width: fit-content;
+}
+
+.verify_content > form > div > input {
+    @apply w-8 mx-3 text-center;
+}
+
+/* For development */
+
+.verify_content > form > button {
+    @apply hidden;
+}
